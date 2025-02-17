@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap");
+
+/* VARIÁVEIS */
+
+:root {
+  /* FONTS */
+  --body: "Antonio", serif;
+  --title: "Rubik Burned", serif;
+
+  /* COLORS */
+  --header: rgba(235, 233, 230, 0.797);
+  --block: rgba(5, 7, 4, 0.7);
+  --primária: #050704;
+  --terciária: #a12d2d;
+}
+
+/* GERAL */
+
+* {
+  font-family: var(--body);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Assets/Background.jpg);
+  background-size: cover;
+  height: 110vh;
+}
+
+/* HEADER */
+
+.top {
+  background-color: var(--header);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0;
+  top: 0;
+  z-index: 1;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.189);
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--terciária);
+  margin-left: 3rem;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: #6d1f1f;
+}
+
+.links {
+  display: flex;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--primária);
+  font-size: 1.8rem;
+  padding-right: 3.5rem;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: var(--terciária);
+}
+
+/* LIVRO */
+
+#container1 {
+  margin-top: 7rem;
+}
+
+.book-info {
+  max-width: 600px;
+  color: white;
+}
+
+.book-info p {
+  font-size: 1.7rem;
+  margin: 5px 0;
+}
+
+
+.persona {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: var(--terciária);
+    gap: 50px;
+    padding: 20px;
+    margin-left: 5rem;
+    margin-bottom: 10px;
+  }
+  
+  .persona h2 {
+    font-family: var(--title);
+    font-size: 4.5rem;
+    color: white;
+    justify-self: center;
+  }
+
+.container {
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  background-color: var(--terciária);
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  margin-left: 5rem;
+}
+
+/* BENEFITS SECTION */
+#key-benefits h2 {
+  text-align: center;
+  padding: 2em;
+  font-weight: 500;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin-left: 7rem;
+}
+
+.benefits p {
+  font-family: var(--title);
+  font-size: 1.5em;
+}
+
+.benefit {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 18%;
+  color: var(--black);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.benefit:hover {
+  transform: scale(1.1);
+}
+
+.benefit .benefit-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+
+#benefit-1 {
+  background-image: url(Assets/Bill.png);
+}
+
+#benefit-2 {
+  background-image: url(Assets/beverly.jpg);
+}
+
+#benefit-3 {
+  background-image: url(Assets/richie.jpg);
+}
+
+
+footer {
+  background-color: var(--terciária);
+  color: white;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.film h2{
+    justify-self: center;
+    color: white;
+    font-family: var(--title);
+    font-size: 5rem;    
+    white-space: nowrap;
+}
+
+.imagem img{
+    display: flex;
+    width: 100%;
+    border-radius: 10px
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  html {
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+
+  .livro{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+  }
+
+  .sinopse{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+  }
+  .benefit {
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .image img{
+    display: none;
+  }
+
+  .balao{
+    display: none;
+  }
+}

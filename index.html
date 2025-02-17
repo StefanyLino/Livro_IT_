@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e08ed7ffaa.js" crossorigin="anonymous"></script>
+    <title>Livro: IT a Coisa 🎈</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="top" id="nav-links">
+            <div class="logo">
+                <h1>IT</h1>
+            </div>
+
+            <div class="links">
+                <a href="index.html">HOME</a>
+                <a href="livro.html">LIVRO</a>
+                <a href="filme.html">FILMES</a>
+                <a
+                    href="https://www.amazon.com/Audible-Coisa-Novel/dp/B0D4ZPJFZC/ref=sr_1_1?crid=WXMCXMMLSRU0&dib=eyJ2IjoiMSJ9.owMPmFY06Yz8Yj0J4MFCC_a8ZcLdbh-BYUNJKiLHoU8zFtR_hHV-1XnxY9qRWcceVFs9cySsHfTdA2oyEAh01bORxPUQn3NZoJHHIzBqJw0l57SCv50Z_cwlUC8Ce8T-8m_5zabn7Q37JkvBkcUbAZ547rNYR8xV3CJH4dgB8-doExC-vGXy0VsetiBKAb0J-Je9aXKkuYPKGMZ9viBFYqHiiBsdwuZpbcy_F32Da_0.GomnjWZfkfe48zb2Z5jP8hg0LlpdyiVovzsb4ddf_wc&dib_tag=se&keywords=it+a+coisa&qid=1739716760&sprefix=it+a+coisa%2Caps%2C499&sr=8-1">COMPRAR</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="container1" class="container">
+            <div class="image">
+                <img src="Assets/book.png" alt="Capa do Livro IT">
+            </div>
+            <div class="book-info">
+                <h2>SOBRE O LIVRO</h2>
+                <p><strong>Título:</strong> IT: A Coisa</p>
+                <p><strong>Autor:</strong> Stephen King</p>
+                <p><strong>Data de publicação:</strong> 15 de setembro de 1986</p>
+                <p><strong>Gênero:</strong> Terror, Horror psicológico</p>
+                <p><strong>Ambientação:</strong> Cidade fictícia de Derry, Maine</p>
+                <a href="livro.html" class="read-more">LEIA MAIS...</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Assets/1.jpg" style="width:100%">
+
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Assets/2.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Assets/3.jpg" style="width:100%">
+                </div>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+        </section>
+        <section class="container">
+            <div class="avaliacoes">
+                <h2>AVALIAÇÕES</h2>
+                <div class="ava1">
+                    <i class="fa-regular fa-user">★★★★★</i>
+                    <p>"IT: A Coisa" é uma obra-prima do terror! Stephen King cria uma história envolvente, repleta de suspense e personagens inesquecíveis. Nunca mais olhei para um palhaço da mesma forma! 🎈📖</p>
+                </div>
+
+                <i class="fa-regular fa-user">★★★★★</i>
+                <p>"Uma leitura intensa e assustadora! Stephen King combina terror e emoção de forma brilhante. Pennywise é, sem dúvida, um dos vilões mais aterrorizantes da literatura!" 🎈🤡</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>MADE BY STEFANY LINO</p>
+        </footer>
+
+        <!-- JAVASCRIPT -->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </main>
+</body>
+</html>
