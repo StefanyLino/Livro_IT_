@@ -265,14 +265,30 @@ footer {
   .container {
     flex-direction: column;
     text-align: center;
+    margin:auto;
+    margin-bottom: 10px;
+  }
+
+  #container1{
+    margin-top: 8.5rem;
+  }
+
+  .persona{
+    margin:auto;
+    margin-bottom: 10px;
+  }
+
+  .benefits{
+    margin:auto;
+    margin-bottom: 10px;
   }
 
   .top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
     width: 100%;
+  }
+
+  .top a{
+    font-size: 1rem;
   }
 
   .sinopse{
