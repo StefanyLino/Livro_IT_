@@ -196,7 +196,7 @@ body {
 }
 
 .fa-regular.fa-user {
-  font-size: 10rem;
+  font-size: 4.3rem;
 }
 
 .avaliacoes p {
@@ -411,6 +411,57 @@ footer {
     border-radius: 10px
 }
 
+.item{
+  display: none;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--background);
+  border-radius: 15px;
+}
+
+.item.ativo{
+  display: block;
+}
+
+.seta{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20rem;
+}
+
+.item .titulo{
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  z-index: 5;
+  text-shadow: 5px 5px 5px var(--background);
+}
+
+#anterior, #proximo{
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #eee9;
+  border: 1px solid #eee9;
+  color: #eee;
+  font-size: x-large;
+  font-family: monospace;
+  cursor: pointer;
+  z-index: 4;
+  border-radius: 50%;
+}
+
+#anterior{
+  left: 30px;
+}
+
+#proximo{
+  right: 30px;
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
@@ -420,10 +471,32 @@ footer {
     width: auto;
   }
 
+  .seta{
+    margin: 0;
+  }
+
   .livro{
     display: flex;
     justify-content: center;
     width: 80%;
+  }
+
+  .pontos h2{
+    font-size: 4rem;
+  }
+
+  .pontos li{
+    margin-left: 25px;
+    font-size: 1.5rem;
+  }
+
+  .autor{
+    margin-left: -30px;
+  }
+
+  .persona{
+    display: flex;
+    align-items: center;
   }
 
   .container {
@@ -453,7 +526,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: auto;
-    padding: 2em;
+    padding: 0;
   }
   .benefit {
     max-width: 100%;
@@ -468,3 +541,5 @@ footer {
     display: none;
   }
 }
+
+
