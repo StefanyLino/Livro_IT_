@@ -170,17 +170,58 @@ body {
 }
 
 #benefit-1 {
-  background-image: url(Assets/Bill.png);
+  background-image: url(Assets/jaeden.jpg);
 }
 
 #benefit-2 {
-  background-image: url(Assets/beverly.jpg);
+  background-image: url(Assets/finn.jpg);
 }
 
 #benefit-3 {
-  background-image: url(Assets/richie.jpg);
+  background-image: url(Assets/sophia.jpg);
 }
 
+#benefit-4 {
+  background-image: url(Assets/wyatt.jpg);
+}
+
+#benefit-5 {
+  background-image: url(Assets/chosen.jpg);
+}
+
+#benefit-6 {
+  background-image: url(Assets/jeremy.jpg);
+}
+#benefit-7 {
+  background-image: url(Assets/james.jpg);
+}
+
+#benefit-8 {
+  background-image: url(Assets/hader.jpg);
+}
+
+#benefit-9 {
+  background-image: url(Assets/jessica.jpg);
+}
+#benefit-10 {
+  background-image: url(Assets/andy.jpg);
+}
+
+#benefit-11 {
+  background-image: url(Assets/isaiah.jpg);
+}
+
+#benefit-12 {
+  background-image: url(Assets/ransone.jpg);
+}
+
+#benefit-13 {
+  background-image: url(Assets/jay.jpg);
+}
+
+#benefit-14 {
+  background-image: url(Assets/skarsgard.jpg);
+}
 
 footer {
   background-color: var(--terciária);
