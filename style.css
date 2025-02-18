@@ -95,7 +95,6 @@ body {
 .book-info h2 {
   font-family: var(--title);
   font-size: 5rem;
-  white-space: nowrap;
 }
 
 .book-info p {
@@ -188,6 +187,7 @@ body {
   font-family: var(--title);
   font-size: 4rem;
   color: white;
+  white-space: nowrap;
 }
 
 .avaliacoes i {
@@ -200,7 +200,7 @@ body {
 }
 
 .avaliacoes p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: white;
   margin-top: 10px;
 }
@@ -423,15 +423,21 @@ footer {
   display: block;
 }
 
-.seta{
+.seta {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; 
+  justify-content: center; 
   margin-left: 20rem;
 }
 
+.pagina{
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
 .item .titulo{
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #ffffff;
   font-weight: bold;
   text-align: center;
@@ -465,10 +471,21 @@ footer {
 /* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
+
   html {
     display: flex;
     align-items: center;
-    width: auto;
+    width: 100%;
+    height: 110vh;
+  }
+
+  body{
+    padding: 0;
+    margin: 0;
+  }
+
+  .top{
+    width: 100%;
   }
 
   .seta{
@@ -476,45 +493,57 @@ footer {
   }
 
   .livro{
-    display: flex;
-    justify-content: center;
-    width: 80%;
+    margin:auto;
+    margin-bottom: 10px;
   }
 
   .pontos h2{
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .pontos li{
     margin-left: 25px;
-    font-size: 1.5rem;
-  }
-
-  .autor{
-    margin-left: -30px;
+    font-size: 2rem;
   }
 
   .persona{
-    display: flex;
-    align-items: center;
+    margin:auto;
+    margin-bottom: 10px;
   }
 
   .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .top {
+    margin:auto;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: fixed;
-    width: 100%;
   }
 
   .sinopse{
     display: flex;
     flex-direction: column;
+  }
+
+  .livro{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-bottom: 10px;
+  }
+
+  .top a{
+    font-size: 1rem;
+  }
+
+  .livro p{
+    padding:  10px;
+  }
+
+  #container1{
+    margin-top: 8.5rem;
+  }
+
+  .persona h2{
+    font-size: 3rem;
   }
 
   .links {
@@ -533,13 +562,21 @@ footer {
     margin-bottom: 2em;
   }
 
-  .image img{
-    display: none;
-  }
 
   .balao{
     display: none;
   }
+
+  footer{
+    align-items: center; 
+    justify-content: center;
+  }
+
+  main{
+    margin:auto;
+    margin-bottom: 10px;
+  }
+
 }
 
 
